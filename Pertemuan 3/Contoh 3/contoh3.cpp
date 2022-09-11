@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <conio.h>
+#include <iostream.h>
+void main()
+{
+	float a, b, c, d, e, f, x, y;
+
+   clrscr();
+	cout<<"Masukan Nilai X = "; cin>>x;
+   cout<<"Masukan Nilai Y = "; cin>>y;
+	/*							Bernilai Sama Dengan			*/
+	a	= 								x==y;
+	/*							Bernilai Tidak Sama Dengan	*/
+	b	= 								x!=y;
+   /*							Bernilai Lebih Besar Dari	*/
+	c	= 								x>y;
+   /*							Bernilai Lebih Kecil Dari	*/
+	d	=								x<y;
+   /*							Bernilai Lebih Besar Sama Dengan	*/
+	e	=								x>=y;
+   /*							Bernilai Lebih Kecil Sama Dengan	*/
+	f	=								x<=y;
+   cout<<endl;
+	cout<<"Hasil dari "<<x<<" == "<<y<<" = "<<a<<endl;
+	cout<<"Hasil dari "<<x<<" != "<<y<<" = "<<b<<endl;
+	cout<<"Hasil dari "<<x<<" > "<<y<<" = "<<c<<endl;
+	cout<<"Hasil dari "<<x<<" < "<<y<<" = "<<d<<endl;
+	cout<<"Hasil dari "<<x<<" >= "<<y<<" = "<<e<<endl;
+	cout<<"Hasil dari "<<x<<" <= "<<y<<" = "<<f<<endl;
+	getch();
+}

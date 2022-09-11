@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include "iostream.h"
+#include <conio.h>
+
+void judul() {
+	puts("==========================================");
+   puts("\tContoh Array Dimensi 1");
+   puts("==========================================");
+}
+
+void main() {
+   judul();
+   int i;
+   float harga[5];
+   harga[0]=1000;
+   harga[1]=2000;
+   harga[2]=3000;
+   harga[3]=4000;
+   harga[4]=5000;
+   printf("Variable harga 1 adalah %.0f\n",harga[1]);
+   printf("Variable harga 3 adalah %.0f\n",harga[3]);
+   for(i=1;i<=3;i++) {
+   	cout<<endl;
+   }
+   puts("Nilai dari seluruh variable adalah:");
+   for(i=0;i<5;i++) {
+   	printf("Variable harga %d adalah %.0f\n",i,harga[i]);
+   }
+   getch();
+}

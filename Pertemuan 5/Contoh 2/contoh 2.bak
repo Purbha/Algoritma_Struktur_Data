@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <iostream.h>
+#include <conio.h>
+void main()
+{
+	char kode,lagi; char nama[50],bonus[50];
+   int jml; float harga,total,pot,ppn,grand;
+lagi:
+	clrscr();
+	printf("Masukan kode buku [1/2/3]: ");cin>>kode;
+	printf("Jumlah pembelian buku    : ");cin>>jml;
+   switch (kode) {
+   	case '1':
+         strcpy(nama,"Sukses Belajar Borland C++"); harga = 50000;
+      	break;
+      case '2':
+         strcpy(nama,"Kunci Pribadi Yang Sukses");
+         harga = 35000;
+      	break;
+      default:
+         strcpy(nama,"Mencari Mutiara Di Dasar Hati");
+         harga = 45000;
+   }
+
+   total = harga * jml;
+   ppn = 0.1 * total;
+
+   if (jml>5)
+   {
+   	strcpy(bonus,"Notebook");
+      pot = 0.1 * total;
+   }
+   else
+   {
+   	strcpy(bonus,"Maaf Tidak Dapat Bonus");
+      pot = 0;
+   }
+
+	grand = total + ppn - pot;
+
+   clrscr();
+   puts("       ***TOKO BUKU HALIFI***");
+   puts("        Jl. Keadilan No.16");
+   puts("----------------------------------------");
+   cout<<"Nama Buku   : "<<nama<<endl;
+   cout<<"Harga Buku  : "<<harga<<endl;
+   cout<<"Bonus       : "<<bonus<<endl;
+   cout<<"Total Bayar : "<<total<<endl;
+   cout<<"Potongan    : "<<pot<<endl;
+   cout<<"PPN         : "<<ppn<<endl;
+   cout<<"Grand Total : "<<grand<<endl;
+   puts("----------------------------------------");
+   puts("       ***Terima Kasih***");
+   cout<<"       Input Data Lagi..?";cin>>lagi;
+   if (lagi == 'Y' || lagi == 'y') { goto lagi; }
+   getch();
+}

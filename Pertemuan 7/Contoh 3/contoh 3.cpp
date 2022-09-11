@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include "iostream.h"
+#include <conio.h>
+
+void judul();
+
+void main() {
+   judul();
+   int i;
+   char hari[7][10]={"Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"};
+   printf("Hari ke 1 adalah %s\n",hari[1]);
+   printf("Hari ke 3 adalah %s",hari[3]);
+   for(i=1;i<=3;i++) { cout<<endl; }
+   puts("Nilai dari seluruh variable hari adalah:");
+   for(i=0;i<7;i++) {
+   	printf("Variable hari %d adalah %s\n",i,hari[i]);
+   }
+   getch();
+}
+
+void judul() {
+	puts("==========================================");
+   puts("\tContoh Array Dimensi 2");
+   puts("==========================================");
+}

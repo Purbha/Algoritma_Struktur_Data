@@ -1,0 +1,33 @@
+#include <conio.h>
+#include <stdio.h>
+#include <iostream.h>
+
+void main()
+{
+	long pendapatan,jasa,komisi,total;
+
+	printf("Pendapatan hari ini Rp. ");cin>>pendapatan;
+
+   if (pendapatan <= 200000)
+   {
+   	jasa = 10000; komisi = 0.1*pendapatan;
+   }
+   else if(pendapatan <= 500000)
+   {
+   	jasa = 20000; komisi = 0.15*pendapatan;
+   }
+   else
+   {
+   	jasa = 30000; komisi = 0.2*pendapatan;
+   }
+
+   /*Proses Perhitungan*/
+   total = pendapatan+jasa+komisi;
+
+   printf("Uang jasa Rp. %d\n",jasa);
+   printf("Uang komisi Rp. %d\n",komisi);
+   puts("===========================================");
+   printf("Hasil total adalah Rp. %d",total);
+
+	getch();
+}

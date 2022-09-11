@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <iostream.h>
+#include <conio.h>
+
+void main ()
+{
+   //Deklarasi Variable
+   int absen,tugas,uts,uas;
+   float total;
+
+	puts("Program Menghitung Nilai Mahasiswa");
+   puts("=====================================");
+   printf("Masukan nilai absen: ");scanf("%d",&absen);
+   cout<<"Masukan nilai tugas: ";cin>>tugas;
+   printf("Masukan nilai uts: ");scanf("%i",&uts);
+   cout<<"Masukan nilai uas: ";cin>>uas;
+
+   //Proses Perhitungan
+   total = (absen*0.1)+(tugas*0.2)+(uts*0.3)+(uas*0.4);
+
+   puts("=====================================");
+   cout<<"Total adalah: "<<total<<" (bentuk tidak terformat)\n";
+   printf("Total adalah: %.2f (bentuk yang terformat)\n",total);
+   puts("=====================================");
+
+   //Kondisi
+   if (total >=75 )
+   { cout<<"Selamat anda lulus."; }
+   else
+   { cout<<"Maaf anda tidak lulus."; }
+
+   getch();
+}

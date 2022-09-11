@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <iostream.h>
+#include <conio.h>
+
+void main() {
+	int nilai1,nilai2;
+	int *pointerku; //Variable pointerku bertipe pointer
+	pointerku = &nilai1; //Variable pointerku diisi alamat dari variable nilai1
+  	*pointerku = 10;
+
+	pointerku = &nilai2;
+  	*pointerku = 20;
+
+  	cout << "Nilai 1 adalah " << nilai1 << endl;
+  	cout << "Nilai 2 adalah " << nilai2 << endl;
+  	getch();
+   
+}
+

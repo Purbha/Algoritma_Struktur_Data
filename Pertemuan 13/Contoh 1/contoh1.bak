@@ -1,0 +1,38 @@
+#include "stdio.h"
+#include <iostream.h>
+#include "conio.h"
+
+void garis()
+{
+	cout<<"========================================\n";
+}
+
+
+void judul()
+{
+   garis();
+   cout<<"Program Nilai Siswa"<<endl;
+   garis();
+}
+
+void main()
+{
+	class siswa
+	{
+		//Penggunaan Public Pada Class
+		public:
+   	char nis[9],nama[20];
+   	float nilai;
+	}sekolah;
+   judul();
+   cout<<"Nomor Induk Siswa : ";cin>>sekolah.nis;
+   cout<<"Input Nama Siswa  : ";cin>>sekolah.nama;
+	cout<<"Input Nilai Akhir : ";cin>>sekolah.nilai;
+   clrscr();
+   cout<<"Data yang anda input adalah"<<endl;
+   garis();
+   cout<<"Nomor Induk Siswa: "<<sekolah.nis<<endl;
+   cout<<"Nama Siswa       : "<<sekolah.nama<<endl;
+   cout<<"Nilai Akhir      : "<<sekolah.nilai;
+	getch();
+}

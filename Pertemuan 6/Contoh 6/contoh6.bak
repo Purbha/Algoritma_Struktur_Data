@@ -1,0 +1,14 @@
+#include <iostream.h>
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+   int bil=2;
+	do
+   {
+      printf(" %d +",bil);
+      bil = bil + 2;
+   }while(bil<=20);
+   getch();
+}

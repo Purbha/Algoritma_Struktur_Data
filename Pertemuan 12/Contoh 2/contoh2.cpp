@@ -1,0 +1,65 @@
+#include "conio.h"
+#include <stdio.h>
+#include "iostream.h"
+#include <iomanip.h>
+
+#define cetak cout
+#define masuk cin
+
+void garis() { cetak<<"================================================\n";
+}
+
+void judul()
+{
+	garis();
+	cetak<<"\tPenggunaan Struktur Dengan Array\n";
+	garis();
+}
+
+char hasil(int nilai);
+
+void main()
+{
+	/*
+   	Sebuah struct adalah sekelompok elemen data yang dikelompokkan bersama
+      di bawah satu nama. Unsur-unsur data, yang dikenal sebagai anggota,
+      dapat memiliki berbagai jenis tipe data dan panjang yang berbeda.
+	*/
+   judul();
+   struct
+   {
+   	char nim[10];
+      char nama[25];
+      char ket[20];
+      int nilai;
+   }mhs[5];
+   int i,jml;
+   cetak<<"Masukan Jumlah Data: ";masuk>>jml;
+   for (i=1;i<=jml;i++)
+   {
+   	cout<<"Data Ke - "<<i<<endl;
+      cout<<"Masukan NIM   : ";cin>>mhs[i].nim;
+      cout<<"Masukan Nama  : ";cin>>mhs[i].nama;
+      cout<<"Masukan Nilai : ";cin>>mhs[i].nilai;
+      cetak<<endl;
+		if (mhs[i].nilai >= 70) { strcpy(mhs[i].ket,"Lulus"); }
+   	else { strcpy(mhs[i].ket,"Gagal"); }
+   }
+   clrscr();
+	judul();
+   cout<<"No Nama      NIM      Nilai  Keterangan"<<endl;
+  	garis();
+   for(i=1;i<=jml;i++)
+   {
+   	cetak<<setw(3)<<setiosflags(ios::left)<<i;
+      cetak<<setw(10)<<mhs[i].nama;
+      cetak<<setw(9)<<mhs[i].nim;
+      cetak<<setw(7)<<mhs[i].nilai;
+      cetak<<mhs[i].ket;
+   	cetak<<endl;
+   }
+   garis();
+   getch();
+}
+
+

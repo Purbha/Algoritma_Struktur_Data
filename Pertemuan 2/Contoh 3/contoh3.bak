@@ -1,0 +1,25 @@
+#include <iostream.h>
+#include <conio.h>
+//Untuk penggunaan printf
+#include <stdio.h>
+
+void main()
+{
+	//Program menghitung luas segitiga
+   int alas ;
+   int tinggi;
+   float at;
+   /*
+   	 to store the result of a scanf operation on a regular variable,
+       its name should be preceded by the reference operator (&)
+       Link reference: http://www.cplusplus.com/reference/cstdio/scanf/
+   */
+   puts("Program menghitung luas segitiga");
+   printf("Masukan nilai alas: ");
+   scanf("%d",&alas);
+   printf("Masukan nilai tinggi: ");
+   scanf("%d",&tinggi);
+   at = (alas*tinggi);
+   printf("Luas segitiga adalah %.2f",at/2);
+	getch();
+}
