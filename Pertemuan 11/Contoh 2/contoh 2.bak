@@ -8,25 +8,21 @@
 #include "iostream.h"
 
 //Prototype Fungsi
-float total(int hrg,int jml);
+float total(int hrg, int jml);
 
-void garis()
-{
+void garis() {
    cout<<"============================================"<<endl;
 }
-
-void judul()
-{
+                                                                   
+void judul() {
    garis();
    cout<<"PROGRAM TOKO ABC"<<endl;
 	garis();
 }
 
-void main()
-{
+void main() {
    char nama[20],barang[20];
    int harga,jumbel;
-
    judul();
    cout<<"Masukkan Nama Pembeli : ";cin>>nama;
    cout<<"Nama Barang           : ";cin>>barang;
@@ -36,12 +32,11 @@ void main()
    cout<<"Terima kasih "<<nama<<" telah berbelanja di toko kami."<<endl;
    cout<<"Barang yang anda beli adalah "<<barang<<" dengan harga "<<harga<<endl;
    cout<<"Jumlah yang anda beli adalah "<<jumbel<<" sehingga total bayar adalah ";
-   cout<<total(harga,jumbel);
+   //cout<<total(harga,jumbel);
+   printf("%.2f",total(harga,jumbel));
    getch();
-
 }
 
-float total(int hrg,int jml)
-{
+float total(int hrg, int jml) {
    return hrg * jml;
 }

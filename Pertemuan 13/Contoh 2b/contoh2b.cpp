@@ -3,8 +3,7 @@
 #include "stdio.h"
 #include <conio.h>
 
-class bujursangkar
-{
+class bujursangkar {
    private:
 		int panjang,lebar;
  	public:
@@ -12,24 +11,20 @@ class bujursangkar
    	int luas();
 };
 
-void bujursangkar::set_nilai(int x, int y)
-{
+void bujursangkar::set_nilai(int x, int y) {
 	panjang = x;
   	lebar = y;
 }
 
-int bujursangkar::luas()
-{
+int bujursangkar::luas() {
 	return panjang * lebar;
 }
 
-void garis()
-{
+void garis() {
    cout<<"=============================================\n";
 }
 
-void main()
-{
+void main() {
 	int p1,p2,l1,l2;
    //Create Object
 	bujursangkar bs1;

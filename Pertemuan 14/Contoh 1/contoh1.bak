@@ -28,6 +28,12 @@ depan:
 	clrscr();
    judul();
 	cout<<"Selamat datang ditoko kami."<<endl;
+   cout<<"Ketentuan Belanja"<<endl;
+   puts("1. Jika kode A maka Nama Barang adalah Baju\n");
+   puts("2. Jika kode B maka Nama Barang adalah Celana\n");
+   puts("3. Jika kode C maka Nama Barang adalah Sepatu\n");
+   puts("4. Jika input kode salah maka muncul pesan salah kode\n");
+
 	cout<<"Masukan Jumlah Data: ";cin>>n;
 
    clrscr();

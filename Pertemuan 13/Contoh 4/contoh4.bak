@@ -38,11 +38,18 @@ void motor::keterangan()
 {
 	cout<<"Informasi Data Motor"<<endl;
 	garis();
+	cout<<"Merk motor adalah  : "<<merk<<endl;
+	cout<<"CC mesin adalah    : "<<cc_mesin<<endl;
+	cout<<"Harga motor adalah : "<<harga<<endl;
 }
 
 
 void main()
 {
-
+	motor balap("Ninja RR",150,35000000);
+   balap.keterangan();
+   cout<<endl<<endl;
+	motor matik("Mio Soul",110,12500000);
+   matik.keterangan();
 	getch();
 }

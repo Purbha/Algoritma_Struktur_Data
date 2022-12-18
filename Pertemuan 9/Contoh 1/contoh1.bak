@@ -2,8 +2,7 @@
 #include <conio.h>
 #include <stdio.h>
 
-void main()
-{
+void main() {
 	/*
    	Sumber: http://www.cplusplus.com/doc/tutorial/pointers/
    	Suatu variable adalah lokasi di memori komputer yang dapat diakses
@@ -13,21 +12,18 @@ void main()
       	merujuk kedalam suatu variable.
    */
 	int nilai1,nilai2,*nilai3;
-
    nilai1 = 5;
-
    cout<<"Nilai 1 adalah "<<nilai1<<endl;
-
    nilai2 = nilai1;
-
-   cout<<"Nilai 2 adalah "<<nilai2<<endl;
-
-	//Variable nilai3 adalah variable yang bertipe pointer
-   //Nilai variable 3 harus berupa alamat memori
-   //Variable nilai3 adalah berisi alamat memori variable nilai1
+   cout<<"Nilai 2 adalah "<<nilai2<<endl;            
+	/*
+   	Variable nilai3 adalah variable yang bertipe pointer.
+   	Nilai variable nilai3 harus berupa alamat suatu memori.
+   	Variable nilai3 adalah berisi alamat memori variable nilai1.
+   */
+   /*
 	nilai3 = &nilai1;
-
    cout<<"Nilai 3 adalah "<<nilai3;
-
+   */
 	getch();
 }

@@ -10,8 +10,7 @@ struct film {
 
 void cetakfilm(film siapa);
 
-void main()
-{
+void main() {
   strcpy(aku.judul,"THOR 2");
   strcpy(aku.tahun,"2013");
   cout<<"Judul Film Kamu: ";cin>>kamu.judul;
@@ -23,8 +22,7 @@ void main()
   getch();
 }
 
-void cetakfilm (film siapa)
-{
+void cetakfilm (film siapa) {
   cout<<siapa.judul;
   cout<<" ("<<siapa.tahun<<")\n";
 }

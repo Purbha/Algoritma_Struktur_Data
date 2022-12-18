@@ -12,7 +12,7 @@ void garis()
 void main()
 {
 	garis(); //Memanggil fungsi garis
-   cout<<"AMIK BSI Kalimalang.";
+   cout<<"Belajar Algoritma Dan Struktur Data.";
 	garis(); //Memanggil fungsi garis
    int a[5];
  	a[0]=20; a[1]=35; a[2]=55; a[3]=25;

@@ -27,6 +27,6 @@ void main()
    float luas;
 	printf("Nilai dari jari-jari adalah %d \n",jari);
    luas = jari * jari * phi;
-   printf("Luas lingkaran adalah %.3f",luas);
+   printf("Luas lingkaran adalah %.2f",luas);
 	getch();
 }

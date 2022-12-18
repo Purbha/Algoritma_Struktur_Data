@@ -16,7 +16,9 @@ class bujursangkar
 
 void bujursangkar::set_nilai(int x, int y)
 {
+	//variable panjang adalah variable di dalam class bujursangkar
 	panjang = x;
+   //variable lebar adalah variable di dalam class bujursangkar
   	lebar = y;
 }
 

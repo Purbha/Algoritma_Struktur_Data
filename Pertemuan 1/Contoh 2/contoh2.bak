@@ -4,17 +4,21 @@
 /*
 	Fungsi-fungsi pustaka yang umum digunakan untuk menampilkan hasil yang
    prototype-nya berada di file judul conio.h
-
-getch () : Fungsi getch() (get character and echo) dipakai untuk membaca sebuah karakter dan karakter yang dimasukan tidak akan ditampilkan di layar.
-
-getche() : Fungsi getche() dipakai untuk membaca sebuah karakter dan karakter yang dimasukan ditampilkan di layar.
-
-clrscr() : Fungsi ini digunkan untuk membersihkan layar window dan memindahkan posisi kursor ke baris 1 kolom 1 (pojok kiri atas).
-
-clreol() : Fungsi ini digunakan untuk membersihkan layar mulai dari posisi kursor hingga kolom terakhir, posisi kursor tiak berubah.
-
-gotoxy () : Fungsi gotoxy digunakan untuk memindahkan kursor ke kolom x, baris y.
-
+   1. getch()
+   	Fungsi getch() (get character and echo) dipakai untuk membaca
+      sebuah karakter dan karakter yang dimasukan tidak akan
+      ditampilkan di layar.
+   2. getche()
+   	Fungsi getche() dipakai untuk membaca sebuah karakter dan karakter
+      yang dimasukan ditampilkan di layar.
+   3. clrscr()
+   	Fungsi ini digunkan untuk membersihkan layar window dan
+      memindahkan posisi kursor ke baris 1 kolom 1 (pojok kiri atas).
+   4. clreol()
+   	Fungsi ini digunakan untuk membersihkan layar mulai dari posisi
+      kursor hingga kolom terakhir, posisi kursor tiak berubah.
+   5. gotoxy()
+   	Fungsi gotoxy digunakan untuk memindahkan kursor ke kolom x, baris y.
 */
 void main()
 {

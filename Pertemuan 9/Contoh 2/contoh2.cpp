@@ -14,6 +14,7 @@ void main() {
       Maka variable nilai1 jadi bernilai 10.
    */
   	*pointerku = 10;
+   //Test juga untuk alamat variable nilai 2
 	pointerku = &nilai2;
   	*pointerku = 20;
   	cout << "Nilai 1 adalah " << nilai1 << endl;

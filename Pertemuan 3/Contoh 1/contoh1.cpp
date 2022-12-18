@@ -21,5 +21,5 @@ void main()
   printf("Hasil Dari B = X-Y= %i \n",b);
   cout<<"Hasil dari C = X%Y= "<<c<<endl;
   cout<<"Hasil dari D = X*Y = "<<d<<endl;
-  getch( );
+  getch();
 }

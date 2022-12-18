@@ -3,14 +3,12 @@
 #include "iostream.h";
 #include "conio.h";
 
-void garis()
-{
+void garis() {
 	printf("\n----------------------------------------\n");
 }
 
-/*Program Utama */
-void main()
-{
+/*Program Utama*/
+void main() {
 	garis(); //Memanggil fungsi garis
    cout<<"Belajar Algoritma Dan Struktur Data.";
 	garis(); //Memanggil fungsi garis

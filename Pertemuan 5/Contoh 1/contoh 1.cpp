@@ -10,6 +10,7 @@ atas:
 	clrscr();
 	cout<<"MASUKAN KODE BARANG [A/B/C]: ";
 	kode = getche();
+   //kode = getch();
 	cout<<'\n';
 	switch (kode) {
 		case 'A': case 'a':
@@ -24,6 +25,7 @@ atas:
    cout<<'\n';
 	cout<<"\nIngin Pilih Lagi [Y/T]: ";
 	lagi = getche();
+   //lagi = getch();
 	if(lagi == 'Y' || lagi == 'y') goto atas;
 	getch();
 }

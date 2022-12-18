@@ -72,7 +72,7 @@ void main()
       cetak<<endl;
    }
    cetak<<"================================================="<<endl;
-   cetak<<setw(39)<<"Total Bayar";
+   cetak<<setw(39)<<"Total Bayar";                        
    cetak<<total;
 	getch();
    /*

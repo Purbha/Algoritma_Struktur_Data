@@ -14,14 +14,14 @@ buka
 	int nilai[5];
 	cetak<<"   Contoh Penggunaan #Define"<<endl;
 	cout<<"==============================="<<endl;
-   for(a=1;a<=i;a++)
+   for(a=0;a<i;a++)
    buka cetak<<"Masukan Nilai ke "<<a<<" -> ";masuk>>nilai[a]; tutup
 
    cout<<"\n\n\n";
 
 	cetak<<"   Hasil Input"<<endl;
 	cout<<"==============================="<<endl;
-   for(a=1;a<=i;a++)
+   for(a=0;a<i;a++)
    { cetak<<"Nilai ke "<<a<<" adalah "<<nilai[a]<<endl; }
 
 	tahan;

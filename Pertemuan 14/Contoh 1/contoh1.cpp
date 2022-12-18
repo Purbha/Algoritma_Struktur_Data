@@ -3,22 +3,35 @@
 #include "iostream.h"
 #include <iomanip.h>
 
-float total(int jumbel, float harga) { return jumbel * harga; }
-void garis() { cout<<"=================================================\n"; }
-void judul() {	cout<<"\tSupermarket Superstar"<<endl; garis(); }
+float total(int jumbel, float harga) {
+	return jumbel * harga;
+}
+
+void garis() {
+	cout<<"=================================================\n";
+}
+
+void judul() {
+	cout<<"\tSupermarket Superstar"<<endl; garis();
+}
 
 //Deklarasi Struct jangan lupa diakhiti titik koma.
-struct data { char kode; char nama[20]; int jml; float hrg; };
+struct data {
+	char kode;
+   char nama[20];
+   int jml;
+   float hrg;
+};
 
-char hurufbesar(char huruf)
-{
+char hurufbesar(char huruf) {
    int kodeascii = (int) huruf;
- 	if (kodeascii>=97 && kodeascii<=122) { kodeascii = kodeascii - 32; }
+ 	if (kodeascii>=97 && kodeascii<=122) {
+   	kodeascii = kodeascii - 32;
+   }
    return (char) kodeascii;
 }
 
-void main()
-{
+void main() {
 	int i,n;
 	data market[10];
   	float subtotal[10];
@@ -33,7 +46,6 @@ depan:
    puts("2. Jika kode B maka Nama Barang adalah Celana\n");
    puts("3. Jika kode C maka Nama Barang adalah Sepatu\n");
    puts("4. Jika input kode salah maka muncul pesan salah kode\n");
-
 	cout<<"Masukan Jumlah Data: ";cin>>n;
 
    clrscr();
@@ -42,8 +54,7 @@ depan:
    cout<<"Kode [A/B/C]: "<<endl;
   	cout<<"Jumlah Beli : "<<endl;
 
-	for(i=1;i<=n;i++)
-	{
+	for(i=1;i<=n;i++) {
 		gotoxy(11,3);clreol();
 		gotoxy(15,4);clreol();
 		gotoxy(15,5);clreol();
@@ -51,23 +62,16 @@ depan:
       gotoxy(15,4);cin>>market[i].kode;
 		gotoxy(15,5);cin>>market[i].jml;
 
-		if(market[i].kode == 'A' || market[i].kode == 'a')
-   	{
+		if(market[i].kode == 'A' || market[i].kode == 'a') {
    		strcpy(market[i].nama,"Baju");
         	market[i].hrg=20000;
-      }
-		else if(market[i].kode == 'B' || market[i].kode == 'b')
-		{
+      } else if(market[i].kode == 'B' || market[i].kode == 'b') {
       	strcpy(market[i].nama,"Celana");
         	market[i].hrg=30000;
-      }
-  		else if(market[i].kode == 'C' || market[i].kode == 'c')
-      {
+      } else if(market[i].kode == 'C' || market[i].kode == 'c') {
       	strcpy(market[i].nama,"Sepatu");
         	market[i].hrg=40000;
-      }
-      else
-      {
+      } else {
       	goto salah;
       }
       subtotal[i] = total(market[i].jml, market[i].hrg);
@@ -78,8 +82,7 @@ depan:
    judul();
    cout<<"No Kode Nama Barang  Harga   Jumlah Subtotal"<<endl;
    garis();
-   for(i=1;i<=n;i++)
-	{
+   for(i=1;i<=n;i++) {
    	cout<<setiosflags(ios::left)<<setw(3)<<i;
    	cout<<setw(5)<<hurufbesar(market[i].kode);
    	cout<<setw(13)<<market[i].nama;

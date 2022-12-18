@@ -14,7 +14,7 @@ void main()
 	int i,n;
 
    tulis("================================");
-   tulis("\tSTEMIK JAKARTA");
+   tulis("\tINFORMATIKA JAKARTA");
    tulis("================================");
    tulis("Data Jurusan");
    tulis("  A => Manajemen Informatika");
@@ -68,7 +68,7 @@ void main()
    	cetak<<setw(4)<<setiosflags(ios::left)<<i;
       cetak<<setw(11)<<nm[i];
       cetak<<setw(24)<<jrs[i];
-		cetak<<setprecision(8)<<daftar[i];
+		cetak<<setprecision(30)<<daftar[i];
       cetak<<endl;
    }
    cetak<<"================================================="<<endl;

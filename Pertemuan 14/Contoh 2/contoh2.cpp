@@ -114,6 +114,7 @@ void main()
       cout<<subtotal[i];
       cout<<endl;
    }
+
    garis();
    long ubay, ukem;
    cout<<"\t\tTotal Bayar : "<<total<<endl;

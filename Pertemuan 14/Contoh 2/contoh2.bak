@@ -99,7 +99,7 @@ void main()
    cout<<"Jumlah Data : "<<setw(20)<<jml;
    cout<<"Nama Pelanggan : "<<pel.nmpel<<endl;
    cout<<setw(34)<<" "<<setw(20);
-   cout<<"Jenis Kelamin  : "<<jenpel.jkpel<<endl;
+   cout<<"Jenis Kelamin  : "<<pel.jkpel<<endl;
 
    garis();
    puts("No Kode Merk Mobil   Jumlah Harga   Subtotal");

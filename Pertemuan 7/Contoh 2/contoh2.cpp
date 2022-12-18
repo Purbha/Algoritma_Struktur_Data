@@ -2,6 +2,15 @@
 #include "iostream.h"
 #include <conio.h>
 
+/*
+Write string to stdout
+Writes the C string pointed by str to the standard output
+ (stdout) and appends a newline character ('\n').
+The function begins copying from the address specified
+ (str) until it reaches the terminating null character ('\0').
+  This terminating null-character is not copied to the stream.
+*/
+
 void judul() {
 	puts("==========================================");
    puts("\tContoh Array Dimensi 1");

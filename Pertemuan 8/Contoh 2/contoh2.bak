@@ -35,6 +35,18 @@ void main()
       printf("Masukan kode [D][P][S]: ");cin>>kode;
       printf("Jumlah beli           : ");cin>>jumlah[i];
 
+      if(kode == 'D' || kode == 'd') {
+  			harga[i] = 12000;
+  			strcpy(jenis[i],"Dada");
+		} else if(kode == 'P' || kode == 'p') {
+  			harga[i] = 8500;
+  			strcpy(jenis[i],"Paha");
+		} else {
+  			harga[i] = 10000;
+  			strcpy(jenis[i],"Sayap");
+		}
+
+      /*
       switch(kode)
       {
          case 'D':
@@ -43,6 +55,7 @@ void main()
   				strcpy(jenis[i],"Dada");
          	break;
          case 'P':
+         case 'p':
             harga[i] = 8500;
   				strcpy(jenis[i],"Paha");
          	break;
@@ -51,6 +64,7 @@ void main()
   				strcpy(jenis[i],"Sayap");
          	break;
       }
+      */
 
       //Hitung Total
       total[i] = jumlah[i]*harga[i];

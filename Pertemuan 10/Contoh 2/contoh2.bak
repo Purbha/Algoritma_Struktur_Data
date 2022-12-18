@@ -3,7 +3,7 @@
 #include <iostream.h>
 
 #define buka {
-#define tutup}
+#define tutup }
 #define cetak cout
 #define masuk cin
 #define tahan getch()
@@ -15,7 +15,7 @@ buka
 	cetak<<"   Contoh Penggunaan #Define"<<endl;
 	cout<<"==============================="<<endl;
    for(a=1;a<=i;a++)
-   { cetak<<"Masukan Nilai ke "<<a<<" -> ";masuk>>nilai[a]; }
+   buka cetak<<"Masukan Nilai ke "<<a<<" -> ";masuk>>nilai[a]; tutup
 
    cout<<"\n\n\n";
 

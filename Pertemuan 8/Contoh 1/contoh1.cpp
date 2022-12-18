@@ -4,7 +4,12 @@
 #include "iomanip.h"
 
 void judul();
-
+/*
+https://cplusplus.com/reference/iomanip/setw/
+Sets the field width to be used on output operations.
+https://cplusplus.com/reference/iomanip/setiosflags/
+Sets the format flags specified by parameter mask.
+*/
 void main() {
    int i,jml;
    judul();
